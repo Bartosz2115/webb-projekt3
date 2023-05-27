@@ -1,0 +1,23 @@
+@media only screen and (min-width: 800px) {
+    .phone-header {
+        display: none;
+    }
+    .skip-to-main-content {
+        display: block;
+        position: fixed;
+        height: 3rem;
+        width: 10rem;
+        background-color: black;
+        color: white;
+        top: -999px;
+        left: calc(50vw - 10rem);
+        z-index: 9999;
+        line-height: 3rem;
+        text-align: center;
+        transition: 250ms;
+    }
+
+    .skip-to-main-content:focus {
+        top: 1rem;
+    }
+} 

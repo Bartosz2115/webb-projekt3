@@ -1,0 +1,11 @@
+@media only screen and (max-width: 1200px) and (min-width: 875px) {
+    .gallery-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 875px) and (min-width: 800px) {
+    .gallery-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

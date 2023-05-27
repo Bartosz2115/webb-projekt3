@@ -1,0 +1,117 @@
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+    
+    .phone-header {
+        position: fixed;
+        top:0;
+
+        height: 4rem;
+        min-width: 100%;
+        background-color: var(--main-color-lighter);
+    }
+
+    .phone-header-menu {
+        margin: calc(2rem - 24px);
+        transition: 250ms;
+        user-select: none;
+    }
+
+    .main-header {
+        position: fixed;
+        display: grid;
+        grid-template-rows: 1fr 10fr;
+        grid-template-columns: 1fr;
+        height: 100vh;
+        width: 50vw;
+        right: -50vw;
+        padding-inline: 0;
+        gap: 0;
+        transition: 250ms;
+    }
+
+    .main-header-title {
+        white-space: normal;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .main-header-ul {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        
+        margin: 0;
+        height: 50vh;
+    }
+
+    .main-header-li {
+        width: 50vw;
+        text-align: center;
+    }
+
+    .main-header-a {
+        font-size: 1.5rem;
+    }
+
+    /* main styling */
+    .main {
+        min-height: 100vh;
+    }
+
+    .banner-img {
+        height: 20rem;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .phone-reverse-section {
+        flex-direction: column-reverse;
+    }
+
+    .section-img {
+        height: 10rem;
+    }
+
+    .section-text-area > p {
+        margin-left: 0;
+        font-size: 1rem;
+    }
+
+    .section-text-area > h2 {
+        font-size: 2.5rem;
+    }
+
+    .secondary-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .gallery-h2 {
+        padding-top: 1rem;
+    }
+
+    .gallery-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form {
+        margin-top: 8rem;
+    }
+
+    .about-section {
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
+
+    .faq-section {
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
+
+    .legal-section {
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
+}

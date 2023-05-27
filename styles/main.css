@@ -1,0 +1,323 @@
+:root {
+    font-family: 'Open Sans', sans-serif;
+
+    --font-100: 'Open Sans', sans-serif;
+    --font-200: 'Allura', cursive;
+
+    font-size: 16px;
+
+    --main-color: rgb(58, 58, 58);
+    --main-color-lighter: rgb(70, 70, 70);
+    --background-color: whitesmoke;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.svg-color {
+    filter: invert(99%) sepia(49%) saturate(68%) hue-rotate(120deg) brightness(115%) contrast(92%);
+}
+
+/* header style */
+.skip-to-main-content{
+    display: none;
+}
+.main-header {
+    max-width: 80vw;
+    height: 6rem;
+    padding-inline: 10vw;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10vw;
+
+    background-color: var(--main-color);
+}
+
+.main-header-title {
+    font-family: var(--font-200);
+    font-size: clamp(0.5rem, 2vw, 2rem);
+    margin: auto;
+    color: whitesmoke;
+    white-space: nowrap;
+}
+
+.main-header-ul {
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style-type: none;
+
+    min-width: 100%;
+    height: 6rem;
+}
+
+.main-header-li {
+    margin: auto;
+}
+
+.main-header-a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: clamp(0.5rem, 1.5vw, 1.5rem);
+}
+
+/* main styling */
+
+.main {
+    min-height: calc(100vh - 6rem);
+}
+
+
+.banner-img {
+    width: 100vw;
+    margin: 0;
+    height: 30rem;
+    object-fit: cover;
+    margin-bottom: 3rem;
+}
+
+.main-section {
+    max-width: 80vw;
+    margin-inline: 10vw;
+
+    min-height: 30rem;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+
+    margin-bottom: 3rem;
+}
+
+.section-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section-text-area {
+    background-color: whitesmoke;
+    padding: 1.5rem;
+}
+
+.section-text-area > h2 {
+    font-family: var(--font-200);
+    font-size: 3rem;
+}
+
+.section-text-area > p {
+    margin-left: 1.75rem;
+    font-size: 1rem;
+}
+
+.phone-reverse-section {
+    flex-direction: none;
+}
+
+.secondary-section {
+    max-width: 80vw;
+    margin-inline: 10vw;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+
+    min-height: 30rem;
+    margin-bottom: 3rem;
+}
+
+.secondary-section-div {
+    background-color: whitesmoke;
+}
+
+.secondary-section-div-img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.secondary-section-text {
+    padding: 1rem;
+}
+
+.secondary-section-text > h2 {
+    font-family: var(--font-200);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.main-footer {
+    height: 20rem;
+    background-color: black;
+    width: 80vw;
+    padding-inline: 10vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer-div {
+    margin: auto;
+}
+
+.footer-div-title {
+    color:white;
+    font-weight: 300;
+}
+
+.footer-div-ul {
+    margin-left: 1rem;
+    list-style-type: none;
+}
+
+.footer-div-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-div-link:hover {
+    text-decoration: underline;
+}
+
+.footer-div-text {
+    color:white;
+    text-decoration: none;
+}
+
+.gallery-h2 {
+    font-family: var(--font-200);
+    font-size: 3rem;
+    margin-left: 10vw;
+    margin-top: 3rem;
+}
+
+.gallery-section {
+    margin-inline: 10vw;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    min-height: 60rem;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem
+}
+
+.gallery-car {
+    background-color: white;
+}
+
+.gallery-car-image {
+    max-width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.gallery-car-text {
+    padding: 1rem;
+}
+
+.car-price {
+    font-family: var(--font-200);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.form {
+    max-width: 80vw;
+    margin-inline: 10vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+
+    border: 1px rgb(155, 155, 155) solid;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.form > label {
+    font-size: 1.25rem;
+}
+.form > .form-input {
+    max-width: 30rem;
+    margin-bottom: 1rem;
+}
+
+.form > textarea {
+    resize: none;
+    max-width: 60rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+
+.inp-btn {
+    max-width: 10rem;
+    height: 3rem;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 1rem;
+    color: whitesmoke;
+    font-family: var(--font-100);
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.inp-btn:hover {
+    background-color: var(--main-color-lighter);
+    cursor: pointer;    
+}
+
+.about-section {
+    width: 80vw;
+    margin-inline: 10vw;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.about-section > h2 {
+    font-family: var(--font-200);
+    font-size: 3rem;
+}
+
+.about-section > p {
+    font-size: 1.125rem;
+    margin-top:1rem;
+}
+
+.faq-section {
+    width: 80vw;
+    margin-inline: 10vw;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.question {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.answer{
+    font-size: 1.125rem;
+}
+
+.legal-section {
+    width: 80vw;
+    margin-inline: 10vw;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.legal-section > h2 {
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.legal-section > p {
+    font-size: 1.125rem;
+    margin-bottom:0.5rem;
+}
